@@ -6,7 +6,7 @@ Generates a Java class based on the webpage of a SoftLayer Data Type reference A
 
 ## Usage
 1. `git clone` this repository.
-2. `pip install -r requirements.txt`
+2. `pip install -r requirements.txt` (May want to create a virtualenv first)
 3. `python generate.py -p <package name> <URL to SoftLayer Data Type API reference>`
 4. See `python generate.py --help` for full usage options.
 
