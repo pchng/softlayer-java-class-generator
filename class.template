@@ -1,0 +1,4 @@
+{package}{import_statements}
+public class {class_name} {{
+{fields}
+}}
