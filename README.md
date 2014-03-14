@@ -52,7 +52,7 @@ public class Account {
 * Relational and Count properties are not included.
 * Getters/setters aren't implemented. Your IDE can do this task for you and you can choose how to do it.
 * Wrapper types are used instead of primitives; this makes it easier to discern when a property was missing from an unmarshalling operation, rather than being present but set to its default value.
-* Classes should be ready to be used by [Jackson](https://github.com/FasterXML/jackson) without any annotations (once the getters/setters are defined) as the field names match 1-1 with the property names.
+* Classes should be ready to be used by [Jackson](https://github.com/FasterXML/jackson) without any field annotations (once the getters/setters are defined) as the field names match 1-1 with the property names.
 
 ## Background
 
