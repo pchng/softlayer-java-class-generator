@@ -1,1 +1,6 @@
-# SoftLayer Data Type, Java class name, import statement
+# SoftLayer Data Type, Java class name(, import statement)
+integer, Integer
+string, String
+boolean, Boolean
+dateTime, Date, import java.util.Date;
+decimal, BigDecimal, import java.math.BigDecimal;
