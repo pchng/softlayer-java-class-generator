@@ -80,25 +80,9 @@ with open('mapping.csv') as map_file:
     if len(parts) > 2:
       java_imports[parts[1]] = parts[2]
 
-# # Mapping of SoftLayer data types to Java data types.
-# sl_to_java = {
-#   'integer': 'Integer',
-#   'string': 'String',
-#   'boolean': 'Boolean',
-#   'dateTime': 'Date',
-#   'decimal': 'BigDecimal',
-# }
-# # Java types that require an import.
-# java_imports = {
-#   'Date': 'import java.util.Date;',
-#   'BigDecimal': 'import java.math.BigDecimal;',
-# }
-
 # It is completely insecure to set verify=false, but some systems may not trust the root CA for the SoftLayer TLS certificate.
 r = requests.get(args.datatype_url, verify=False)
 html = BeautifulSoup(r.text)
-
-print html
 
 class_name = args.name
 if not class_name:
