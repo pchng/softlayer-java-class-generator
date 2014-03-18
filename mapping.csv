@@ -1,4 +1,4 @@
-# SoftLayer Data Type, Java class name(, import statement)
+# <SoftLayer Data Type>, <Java class name>[, import statement]
 integer, Integer
 string, String
 boolean, Boolean
