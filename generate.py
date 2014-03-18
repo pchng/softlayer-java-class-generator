@@ -72,12 +72,12 @@ with open('mapping.csv') as map_file:
       continue
 
     parts = [part.strip() for part in line.split(',')]
-    if len(parts) < 2:
+    if len(parts) < 2 or not parts[0] or not parts[1]:
       logger.warn("Ignoring invalid line in mapping file: {}".format(line))
       continue
 
     sl_to_java[parts[0]] = parts[1]
-    if len(parts) > 2:
+    if len(parts) > 2 and parts[2]:
       java_imports[parts[1]] = parts[2]
 
 # It is completely insecure to set verify=false, but some systems may not trust the root CA for the SoftLayer TLS certificate.
