@@ -56,7 +56,7 @@ public class Account {
 
 ## Background
 
-The [SoftLayer APIs](https://sldn.softlayer.com/reference/overview) are pretty well documented.  Unfortunately, there doesn't appear to be an XSD for their [REST API](http://sldn.softlayer.com/article/rest), meaning you can't auto-generate Java classes using `[xjc](http://docs.oracle.com/javase/6/docs/technotes/tools/share/xjc.html)`. However, this is a problem for me as I'm lazy and don't like copying and pasting a bunch of field names to make a Java class.
+The [SoftLayer APIs](https://sldn.softlayer.com/reference/overview) are pretty well documented.  Unfortunately, there doesn't appear to be an XSD for their [REST API](http://sldn.softlayer.com/article/rest), meaning you can't auto-generate Java classes using [`xjc`](http://docs.oracle.com/javase/6/docs/technotes/tools/share/xjc.html). However, this is a problem for me as I'm lazy and don't like copying and pasting a bunch of field names to make a Java class.
 
 ### Python to rescue
 
